@@ -35,3 +35,8 @@ items.splice(1, 2)
 const nestedArr = [[2, 4, 6], 3, [2, 3]]
 const newArr = nestedArr.flat()
 
+const numbersNew = [3, 2, 6, 4, 2]
+const resultN = numbersNew.filter(number => {
+    if (!(number % 2)) return number
+}).map(number => number*2).reduce((total, number) => total+number)
+
