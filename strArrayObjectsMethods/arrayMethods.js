@@ -18,3 +18,6 @@ const priceResult = prices.filter(price => {
     if (price>100) return price
 }).map(price => price+(price*0.10))
 
+const myArr = [2, 4, 3, 2, 1]
+const multiEvery = myArr.reduce((total, current) => total + (current * 2), 0)
+
