@@ -51,3 +51,22 @@ const groupBy = (items) => {
         }
     } return result
 }
+
+const toCheck = [2, 4, 3, 1]
+const hasDuplicate = toCheck.length !== toCheck.filter(
+    (item, index) => toCheck.indexOf(item) === index,
+    []
+).length
+
+const products = [
+  { name: "Laptop", price: 800, inStock: true,  category: "tech"    },
+  { name: "Phone",  price: 400, inStock: false, category: "tech"    },
+  { name: "Shirt",  price: 50,  inStock: true,  category: "fashion" }
+];
+
+const productResult = products.filter(
+    (product) => product.inStock).filter(
+    (product) => product.price > 100).sort(
+        (a, b) => a.price - b.price
+    ).map(product => product.name).join(' ')
+
