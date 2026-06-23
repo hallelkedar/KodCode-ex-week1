@@ -28,3 +28,6 @@ const agesAverage = users.reduce(
 
 const numbersArr = [8, 4, 2, 1, 5]
 const numbersDownToUp = numbersArr.sort((a, b) => b - a)
+
+const items = ['Hey', 'how', 'are', 'you']
+items.splice(1, 2)
